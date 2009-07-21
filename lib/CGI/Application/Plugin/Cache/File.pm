@@ -11,7 +11,7 @@ require Exporter;
 @EXPORT    = qw(cache_config cache);
 @EXPORT_OK = qw();
 
-$VERSION = '0.1';
+$VERSION = '0.2';
 
 sub cache {
     my $self = shift;
