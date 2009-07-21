@@ -1,7 +1,7 @@
 --- #YAML:1.0
 name:               CGI-Application-Plugin-Cache-File
-version:            0.2
-abstract:           Caching support using C<Cache::File>
+version:            0.3
+abstract:           Caching support using L<Cache::File>
 author:
     - Job van Achterberg <job@>
 license:            unknown

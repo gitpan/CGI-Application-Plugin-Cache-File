@@ -11,7 +11,7 @@ require Exporter;
 @EXPORT    = qw(cache_config cache);
 @EXPORT_OK = qw();
 
-$VERSION = '0.2';
+$VERSION = '0.3';
 
 sub cache {
     my $self = shift;
@@ -29,23 +29,23 @@ __END__
 
 =head1 NAME
 
-CGI::Application::Plugin::Cache::File - Caching support using C<Cache::File>
+CGI::Application::Plugin::Cache::File - Caching support using L<Cache::File>
 
 =head1 SYNOPSIS
 
-use CGI::Application::Plugin::Cache::File;
+    use CGI::Application::Plugin::Cache::File;
 
-#in sub cgiapp_init
+    #in sub cgiapp_init
 
-$self->cache_config(
-    cache_root      => '/tmp/cache',
-    default_expires => '600 seconds'
-);
+    $self->cache_config(
+        cache_root      => '/tmp/cache',
+        default_expires => '600 seconds'
+    );
 
-#in some runmode
+    #in some runmode
 
-$self->cache->set('foo','bar');
-my $cached = $self->cache->get('foo');
+    $self->cache->set('foo','bar');
+    my $cached = $self->cache->get('foo');
 
 =head1 DESCRIPTION
 
@@ -57,18 +57,18 @@ share it with different processes.
 =head2 cache_config
 
 This creates the Cache::File instance within CGI::Application. Any arguments are passed on to
-Cache::File's constructor method. See C<Cache;:File#PROPERTIES> for details.
+Cache::File's constructor method. See L<Cache;:File#PROPERTIES> for details.
 
 If successful, this function returns the Cache::File instance created.
 
 =head2 cache
 
 This returns the Cache::File instance within CGI::Application. You can call
-any Cache::File instance method on it. See C<Cache::File> for details.
+any Cache::File instance method on it. See L<Cache::File> for details.
 
 =head1 SEE ALSO
 
-L<CGI::Application>, L<CacheLLFile>, perl(1)
+L<CGI::Application>, L<Cache::File>, perl(1)
 
 =head1 AUTHOR
 
