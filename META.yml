@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               CGI-Application-Plugin-Cache-File
-version:            0.3
+version:            0.4
 abstract:           Caching support using L<Cache::File>
 author:
     - Job van Achterberg <job@>
@@ -10,7 +10,8 @@ configure_requires:
     ExtUtils::MakeMaker:  0
 build_requires:
     ExtUtils::MakeMaker:  0
-requires:  {}
+requires:
+    Cache::File:  2.04
 no_index:
     directory:
         - t

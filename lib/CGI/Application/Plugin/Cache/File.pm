@@ -11,7 +11,7 @@ require Exporter;
 @EXPORT    = qw(cache_config cache);
 @EXPORT_OK = qw();
 
-$VERSION = '0.3';
+$VERSION = '0.4';
 
 sub cache {
     my $self = shift;
@@ -57,7 +57,7 @@ share it with different processes.
 =head2 cache_config
 
 This creates the Cache::File instance within CGI::Application. Any arguments are passed on to
-Cache::File's constructor method. See L<Cache;:File#PROPERTIES> for details.
+Cache::File's constructor method. See L<Cache::File#PROPERTIES> for details.
 
 If successful, this function returns the Cache::File instance created.
 
